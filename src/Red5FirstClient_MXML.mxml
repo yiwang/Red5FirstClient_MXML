@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" creationComplete="test()" 
+	layout="absolute">
+	 
+	 <mx:Script>
+        <![CDATA[
+        	import mx.controls.Alert;
+            public var client;
+        
+        	trace("MXML project");
+            
+            public function test() {
+            	trace("in test");
+            	client = new Red5FirstClient();
+            	trace("after client creation");
+            }
+        ]]>
+    </mx:Script>
+</mx:Application>
